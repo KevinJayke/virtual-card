@@ -1,7 +1,5 @@
-import "./App.css";
-
 function App() {
-  return <div className="App">first commit</div>;
+  return <div>first commit</div>;
 }
 
 export default App;
