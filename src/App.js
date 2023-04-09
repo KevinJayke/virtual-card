@@ -7,13 +7,14 @@ const Button = styled.button`
   border-radius: 3px;
   border: 2px solid palevioletred;
   color: ${(props) => props.theme.colors.primary};
+  font-family: ${(props) => props.theme.fonts.body}, sans-serif;
 `;
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Button secondary>Coucou</Button>
+      <Button>Coucou</Button>
     </ThemeProvider>
   );
 }
