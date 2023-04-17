@@ -3,6 +3,7 @@ export const theme = {
     primary: "purple",
   },
   fonts: {
-    body: "Poppins",
+    main: "Poppins",
+    secondary: "MD IO",
   },
 };
