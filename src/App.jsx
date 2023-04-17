@@ -1,20 +1,13 @@
-import styled, { ThemeProvider } from "styled-components";
+import { ThemeProvider } from "styled-components";
 import { theme } from "./style/Theme";
 import { GlobalStyles } from "./style/Global";
-
-const HeadingTest = styled.h1`
-  background: transparent;
-  border-radius: 3px;
-  border: 2px solid palevioletred;
-  color: ${(props) => props.theme.colors.primary};
-  font-family: ${(props) => props.theme.fonts.main}, sans-serif;
-`;
+import Header from "./assets/components/Header";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <HeadingTest>Salut</HeadingTest>
+      <Header />
     </ThemeProvider>
   );
 }

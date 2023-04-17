@@ -1,6 +1,6 @@
 export const theme = {
   colors: {
-    primary: "purple",
+    primary: "#0D53EC",
   },
   fonts: {
     main: "Poppins",

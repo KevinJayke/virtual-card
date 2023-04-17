@@ -20,7 +20,7 @@ box-sizing: border-box;
 
 /* Remove default margin */
 
-    {
+* {
     margin: 0;
     }
 
@@ -78,4 +78,6 @@ overflow-wrap: break-word;
 #__next {
 isolation: isolate;
 }
+
+
 `;
