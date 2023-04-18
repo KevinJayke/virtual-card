@@ -9,6 +9,7 @@ const Box = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: ${(props) => (props.marginTop ? "-2px" : "0px")};
 `;
 
 const SocialIcon = ({ ...props }) => {

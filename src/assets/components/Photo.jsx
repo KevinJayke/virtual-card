@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 const Frame = styled.figure`
-  width: 12rem;
-  height: 12rem;
+  width: 11.75rem;
+  height: 11.75rem;
   border: 2px solid ${(props) => props.theme.colors.primary};
   border-radius: 10px 0px 0px 0px;
 `;
