@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import Icon from "./Icon";
 
-const Box = styled.div`
+const Link = styled.a`
+  background: "white";
   width: 4rem;
   height: 4rem;
   border: 2px solid ${(props) => props.theme.colors.primary};
@@ -12,11 +13,11 @@ const Box = styled.div`
   margin-top: ${(props) => (props.marginTop ? "-2px" : "0px")};
 `;
 
-const SocialIcon = ({ ...props }) => {
+const SocialIcon = ({ url, ...props }) => {
   return (
-    <Box {...props}>
+    <Link target="_blank" rel="noopener noreferrer" href={url} {...props}>
       <Icon {...props} />
-    </Box>
+    </Link>
   );
 };
 
