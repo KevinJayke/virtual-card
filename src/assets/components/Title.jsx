@@ -43,7 +43,7 @@ const SubText = styled.h2`
   font-size: 16px;
 `;
 
-const Bold = styled.span`
+const Bold = styled.em`
   color: ${(props) => props.theme.colors.primary};
   font-family: ${(props) => props.theme.fonts.secondary};
   font-style: normal;

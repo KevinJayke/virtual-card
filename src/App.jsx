@@ -3,6 +3,7 @@ import { theme } from "./style/Theme";
 import { GlobalStyles } from "./style/Global";
 import Header from "./assets/components/Header";
 import Title from "./assets/components/Title";
+import Quote from "./assets/components/Quote";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <GlobalStyles />
       <Header />
       <Title />
+      <Quote />
     </ThemeProvider>
   );
 }
