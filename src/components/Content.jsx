@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import Line from "./Line";
-import { theme } from "../../style/Theme";
-import svgIcons from "../svg/svgIcons";
+import Line from "../assets/svg/Line";
+import { theme } from "../style/Theme";
+import svgIcons from "../assets/svg/svgIcons";
 
 const Box = styled.div`
   width: 15.625rem;
@@ -14,6 +14,8 @@ const Box = styled.div`
   justify-content: center;
   padding: 1rem;
   margin-top: -2px;
+  background: ${(props) => props.theme.colors.container};
+  box-shadow: 0.25rem 0.25rem 0px 0px ${(props) => props.theme.colors.secondary};
 `;
 
 const Text = styled.h1`
@@ -52,7 +54,7 @@ const Bold = styled.em`
   text-transform: uppercase;
 `;
 
-const Title = () => (
+const Content = () => (
   <Box>
     <Text>I’m Kévin Jayat</Text>
     <SecondText>
@@ -65,4 +67,4 @@ const Title = () => (
   </Box>
 );
 
-export default Title;
+export default Content;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import Icon from "./Icon";
-import svgIcons from "../svg/svgIcons";
-import { theme } from "../../style/Theme";
+import Icon from "../assets/svg/Icon";
+import svgIcons from "../assets/svg/svgIcons";
+import { theme } from "../style/Theme";
 
 const Box = styled.section`
   width: 15.625rem;
@@ -13,6 +13,8 @@ const Box = styled.section`
   justify-content: center;
   padding: 2rem;
   margin-top: -2px;
+  background: ${(props) => props.theme.colors.container};
+  box-shadow: 0.25rem 0.25rem 0px 0px ${(props) => props.theme.colors.secondary};
 `;
 
 const Text = styled.p`
@@ -24,34 +26,34 @@ const Text = styled.p`
 
 const IconWrapper = styled.div`
   position: absolute;
-  margin-left: ${(props) => (props.left ? "-1.7rem" : "11.6rem")};
-  margin-top: ${(props) => (props.left ? "-12rem" : "12rem")}; ;
+  margin-left: ${(props) => (props.left ? "-1.8rem" : "11.7rem")};
+  margin-top: ${(props) => (props.left ? "-11.8rem" : "11.7rem")}; ;
 `;
 
 const Quote = () => {
   return (
     <Box>
-      <IconWrapper left>
+      {/* <IconWrapper left>
         <Icon
           height={"24px"}
           width={"24px"}
           color={theme.colors.primary}
           shape={svgIcons.quoteLeft}
         />
-      </IconWrapper>
+      </IconWrapper> */}
       <Text>
-        Passionate & creative, with a keen interest in the intersection of
+        “Passionate & creative, with a keen interest in the intersection of
         design and the web, I am constantly seeking to enhance my digital
-        skills, and enjoy exploring new ways to bring innovative ideas to life.
+        skills, and enjoy exploring new ways to bring innovative ideas to life.”
       </Text>
-      <IconWrapper>
+      {/* <IconWrapper>
         <Icon
           height={"24px"}
           width={"24px"}
           color={theme.colors.primary}
           shape={svgIcons.quoteRight}
         />
-      </IconWrapper>
+      </IconWrapper> */}
     </Box>
   );
 };

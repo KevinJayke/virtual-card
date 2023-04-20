@@ -1,29 +1,26 @@
 import styled, { ThemeProvider } from "styled-components";
 import { theme } from "./style/Theme";
 import { GlobalStyles } from "./style/Global";
-import Header from "./assets/components/Header";
-import Title from "./assets/components/Title";
-import Quote from "./assets/components/Quote";
-import Download from "./assets/components/Download";
+import Header from "./containers/Header";
+import Main from "./containers/Main";
 
-const Card = styled.div`
+const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  background-color: ${(props) => props.theme.colors.background};
 `;
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Card>
-        <GlobalStyles />
+      <GlobalStyles />
+      <Container>
         <Header />
-        <Title />
-        <Quote />
-        <Download />
-      </Card>
+        <Main />
+      </Container>
     </ThemeProvider>
   );
 }
