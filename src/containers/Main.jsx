@@ -1,4 +1,4 @@
-import Action from "../components/Action";
+import Button from "../components/Button";
 import Quote from "../components/Quote";
 import Content from "../components/Content";
 
@@ -7,7 +7,7 @@ const Main = () => {
     <>
       <Content />
       <Quote />
-      <Action />
+      <Button />
     </>
   );
 };

@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import { BoxQuote } from "../style/BoxStyle";
 import { QuoteText } from "../style/TextStyle";
 

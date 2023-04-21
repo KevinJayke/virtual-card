@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import Icon from "../assets/svg/Icon";
 import { IconBox } from "../style/BoxStyle";
 
