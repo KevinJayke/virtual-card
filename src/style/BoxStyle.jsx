@@ -1,5 +1,15 @@
 import styled from "styled-components";
 
+export const HStack = styled.div`
+  display: flex;
+`;
+
+export const VStack = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-left: -2px;
+`;
+
 // Common style
 export const Box = styled.div`
   width: 15.625rem;

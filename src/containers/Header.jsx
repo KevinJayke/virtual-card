@@ -3,17 +3,7 @@ import svgIcons from "../assets/svg/svgIcons";
 import Photo from "../components/Photo";
 import SocialIcon from "../components/SocialIcon";
 import myPicture from "../assets/images/myPicture.png";
-import styled from "styled-components";
-
-const HStack = styled.header`
-  display: flex;
-`;
-
-const VStack = styled.section`
-  display: flex;
-  flex-direction: column;
-  margin-left: -2px;
-`;
+import { HStack, VStack } from "../style/BoxStyle";
 
 const socialIconsData = [
   {
@@ -35,14 +25,14 @@ const socialIconsData = [
 
 const Header = () => {
   return (
-    <HStack>
+    <HStack as={"header"}>
       <Photo
         alt={
           "A man with a smile, a mustache and glasses, standing in front of the camera"
         }
         src={myPicture}
       />
-      <VStack>
+      <VStack as={"section"}>
         {socialIconsData.map((icon, index) => (
           <SocialIcon
             color={theme.colors.primary}
