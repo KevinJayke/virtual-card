@@ -19,7 +19,6 @@ export const Box = styled.div`
 `;
 
 export const BoxContent = styled(Box)`
-  height: 10rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -30,13 +29,14 @@ export const BoxContent = styled(Box)`
 `;
 
 export const BoxPhoto = styled(Box)`
-  height: 11.75rem;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
   width: 11.75rem;
   border-radius: 10px 0px 0px 0px;
 `;
 
 export const BoxQuote = styled(Box)`
-  height: 14rem;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -47,12 +47,12 @@ export const BoxQuote = styled(Box)`
 
 export const IconBox = styled(Box)`
   width: 4rem;
-  height: 4rem;
   border-radius: 0px ${(props) => (props.rounded ? "10px" : "0px")} 0px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: ${(props) => (props.marginTop ? "-2px" : "0px")};
+  aspect-ratio: 1;
 `;
 
 export const ButtonBox = styled(Box)`
