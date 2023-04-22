@@ -5,7 +5,6 @@ export const HStack = styled.div`
 `;
 
 export const VStack = styled.div`
-  display: flex;
   flex-direction: column;
   margin-left: -2px;
 `;
@@ -20,7 +19,6 @@ export const Box = styled.div`
 
 export const BoxContent = styled(Box)`
   text-align: center;
-  display: flex;
   flex-direction: column;
   gap: 0.6rem;
   justify-content: center;
