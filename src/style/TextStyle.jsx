@@ -1,10 +1,14 @@
 import styled from "styled-components";
 
+const baseFontSize = 16;
+const titleFontSize = 23;
+const lineHeight = (1.5 * titleFontSize) / baseFontSize;
+
 export const BaseText = styled.p`
   color: ${(props) => props.theme.colors.primary};
   font-family: ${(props) => props.theme.fonts.main};
   font-weight: 600;
-  font-size: 16px;
+  font-size: ${`${baseFontSize}px`};
 `;
 
 export const ButtonText = styled(BaseText)`
@@ -15,13 +19,14 @@ export const ButtonText = styled(BaseText)`
 
 export const Title = styled(BaseText)`
   font-weight: 700;
-  font-size: 22px;
+  font-size: ${`${titleFontSize}px`};
 `;
 
 export const SubTitle = styled(BaseText)`
   font-style: italic;
   font-weight: 500;
   position: relative;
+  line-height: ${lineHeight};
 
   ::before,
   ::after {
@@ -46,6 +51,7 @@ export const SubTitle = styled(BaseText)`
 export const Italic = styled(BaseText)`
   font-family: ${(props) => props.theme.fonts.secondary};
   font-style: italic;
+  line-height: ${lineHeight};
 `;
 
 export const Bold = styled(BaseText)`

@@ -18,6 +18,7 @@ export const Box = styled.div`
 `;
 
 export const BoxContent = styled(Box)`
+  display: flex;
   text-align: center;
   flex-direction: column;
   gap: 0.6rem;
