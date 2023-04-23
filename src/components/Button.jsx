@@ -4,23 +4,26 @@ import svgIcons from "../assets/svg/svgIcons";
 import { theme } from "../style/Theme";
 import { ButtonBox } from "../style/BoxStyle";
 import { ButtonText } from "../style/TextStyle";
+import { motion } from "framer-motion";
 
 const Button = () => {
   return (
-    <ButtonBox
-      as={"a"}
-      href={pdf}
-      download
-      target="_blank"
-      rel="noopener noreferrer">
-      <Icon
-        shape={svgIcons.downLoad}
-        width={"24px"}
-        height={"24px"}
-        color={theme.colors.primary}
-      />
-      <ButtonText>Download my CV</ButtonText>
-    </ButtonBox>
+    <motion.div whileHover={{ margin: "1rem" }} whileTap={{ scale: 0.9 }}>
+      <ButtonBox
+        as={"a"}
+        href={pdf}
+        download
+        target="_blank"
+        rel="noopener noreferrer">
+        <Icon
+          shape={svgIcons.downLoad}
+          width={"24px"}
+          height={"24px"}
+          color={theme.colors.primary}
+        />
+        <ButtonText>Download my CV</ButtonText>
+      </ButtonBox>
+    </motion.div>
   );
 };
 
