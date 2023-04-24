@@ -34,13 +34,7 @@ const Header = () => {
       />
       <VStack as={"section"}>
         {socialIconsData.map((icon, index) => (
-          <SocialIcon
-            color={theme.colors.primary}
-            width="24px"
-            height="24px"
-            key={index}
-            {...icon}
-          />
+          <SocialIcon width="24px" height="24px" key={index} {...icon} />
         ))}
       </VStack>
     </HStack>

@@ -67,3 +67,7 @@ export const ButtonBox = styled(Box)`
   text-decoration: none;
   border-radius: 0px 0px 10px 10px;
 `;
+
+export const Path = styled.path`
+  fill: ${(props) => props.theme.colors.primary};
+`;
