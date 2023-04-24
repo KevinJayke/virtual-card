@@ -1,4 +1,3 @@
-import { theme } from "../style/Theme";
 import svgIcons from "../assets/svg/svgIcons";
 import Photo from "../components/Photo";
 import SocialIcon from "../components/SocialIcon";
