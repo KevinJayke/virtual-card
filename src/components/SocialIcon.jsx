@@ -8,7 +8,7 @@ const SocialIcon = ({ url, ...props }) => {
       whileHover={{
         x: 10,
       }}
-      whileTap={{ scale: 0.9 }}>
+      whileTap={{ scale: 0.9, x: 0 }}>
       <IconBox
         as={"a"}
         target="_blank"

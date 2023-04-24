@@ -4,6 +4,7 @@ import { GlobalStyles } from "./style/Global";
 import Header from "./containers/Header";
 import Main from "./containers/Main";
 import { useState } from "react";
+import { useEffect } from "react";
 
 const Container = styled.div`
   display: flex;
@@ -16,16 +17,21 @@ const Container = styled.div`
 `;
 
 function App() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+
   const themeToggler = () => {
-    theme === "light" ? setTheme("dark") : setTheme("light");
+    theme === "dark" ? setTheme("light") : setTheme("dark");
   };
+
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
   return (
-    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+    <ThemeProvider theme={theme === "dark" ? darkTheme : lightTheme}>
       <GlobalStyles />
       <Container>
-        <button onClick={themeToggler}>Switch Theme</button>
-        <Header />
+        <Header onToggleTheme={themeToggler} />
         <Main />
       </Container>
     </ThemeProvider>

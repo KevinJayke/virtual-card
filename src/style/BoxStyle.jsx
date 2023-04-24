@@ -68,6 +68,19 @@ export const ButtonBox = styled(Box)`
   border-radius: 0px 0px 10px 10px;
 `;
 
+export const ToggleBox = styled(Box)`
+  background-color: transparent;
+  border: none;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+  box-shadow: none;
+`;
+
 export const Path = styled.path`
   fill: ${(props) => props.theme.colors.primary};
 `;

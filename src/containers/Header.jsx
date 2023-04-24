@@ -2,7 +2,10 @@ import svgIcons from "../assets/svg/svgIcons";
 import Photo from "../components/Photo";
 import SocialIcon from "../components/SocialIcon";
 import myPicture from "../assets/images/myPicture.png";
-import { HStack, VStack } from "../style/BoxStyle";
+import { HStack, ToggleBox, VStack } from "../style/BoxStyle";
+import Icon from "../assets/svg/Icon";
+import { useTheme } from "styled-components";
+import { motion } from "framer-motion";
 
 const socialIconsData = [
   {
@@ -22,9 +25,30 @@ const socialIconsData = [
   },
 ];
 
-const Header = () => {
+const rotateMotion = {
+  hover: {
+    rotate: 60,
+  },
+  tap: {
+    scale: 0.5,
+  },
+};
+
+const Header = ({ onToggleTheme }) => {
+  const { type } = useTheme();
   return (
     <HStack as={"header"}>
+      <motion.div whileHover="hover" whileTap="tap">
+        <ToggleBox onClick={onToggleTheme}>
+          <motion.div variants={rotateMotion}>
+            <Icon
+              shape={type === "light" ? svgIcons.sun : svgIcons.moon}
+              width={"24px"}
+              height={"24px"}
+            />
+          </motion.div>
+        </ToggleBox>
+      </motion.div>
       <Photo
         alt={
           "A man with a smile, a mustache and glasses, standing in front of the camera"
