@@ -1,16 +1,23 @@
 import Icon from "../assets/svg/Icon";
 import { IconBox } from "../style/BoxStyle";
+import { motion } from "framer-motion";
 
 const SocialIcon = ({ url, ...props }) => {
   return (
-    <IconBox
-      as={"a"}
-      target="_blank"
-      rel="noopener noreferrer"
-      href={url}
-      {...props}>
-      <Icon {...props} />
-    </IconBox>
+    <motion.div
+      whileHover={{
+        x: 10,
+      }}
+      whileTap={{ scale: 0.9 }}>
+      <IconBox
+        as={"a"}
+        target="_blank"
+        rel="noopener noreferrer"
+        href={url}
+        {...props}>
+        <Icon {...props} />
+      </IconBox>
+    </motion.div>
   );
 };
 

@@ -14,7 +14,8 @@ export const Box = styled.div`
   width: 15.625rem;
   border: 2px solid ${(props) => props.theme.colors.primary};
   background: ${(props) => props.theme.colors.container};
-  box-shadow: 0.25rem 0.25rem 0px 0px ${(props) => props.theme.colors.secondary};
+  box-shadow: 0.25rem 0rem 0px 0px ${(props) => props.theme.colors.secondary},
+    0.25rem 0.25rem 0px 0px ${(props) => props.theme.colors.secondary};
 `;
 
 export const BoxContent = styled(Box)`
@@ -52,6 +53,7 @@ export const IconBox = styled(Box)`
   align-items: center;
   margin-top: ${(props) => (props.marginTop ? "-2px" : "0px")};
   aspect-ratio: 1;
+  box-shadow: 0.25rem 0rem 0px 0px ${(props) => props.theme.colors.secondary};
 `;
 
 export const ButtonBox = styled(Box)`
