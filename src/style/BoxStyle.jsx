@@ -54,6 +54,11 @@ export const IconBox = styled(Box)`
   margin-top: ${(props) => (props.marginTop ? "-2px" : "0px")};
   aspect-ratio: 1;
   box-shadow: 0.25rem 0rem 0px 0px ${(props) => props.theme.colors.secondary};
+
+  &:active {
+    background: ${(props) => props.theme.colors.secondary};
+    transition: 0.2s linear;
+  }
 `;
 
 export const ButtonBox = styled(Box)`
@@ -66,6 +71,11 @@ export const ButtonBox = styled(Box)`
   margin-top: -2px;
   text-decoration: none;
   border-radius: 0px 0px 10px 10px;
+
+  &:active {
+    background: ${(props) => props.theme.colors.secondary};
+    transition: 0.2s linear;
+  }
 `;
 
 export const ToggleBox = styled(Box)`
