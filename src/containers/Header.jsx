@@ -9,8 +9,8 @@ import { motion } from "framer-motion";
 
 const socialIconsData = [
   {
-    href: "mailto:kevin.jayat@gmail.com?subject=Hello%20Kevin",
-    shape: svgIcons.email,
+    href: "https://www.linkedin.com/in/k%C3%A9vin-jayat-952b56207/",
+    shape: svgIcons.linkedIn,
     rounded: true,
   },
   {
@@ -19,8 +19,8 @@ const socialIconsData = [
     marginTop: true,
   },
   {
-    href: "https://www.linkedin.com/in/k%C3%A9vin-jayat-952b56207/",
-    shape: svgIcons.linkedIn,
+    href: "https://twitter.com/kevin_jyt",
+    shape: svgIcons.twitter,
     marginTop: true,
   },
 ];
