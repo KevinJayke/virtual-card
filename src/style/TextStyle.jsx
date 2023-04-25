@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "./BreakPoints";
 
 const baseFontSize = 16;
 const titleFontSize = 23;
@@ -8,7 +9,11 @@ export const BaseText = styled.p`
   color: ${(props) => props.theme.colors.primary};
   font-family: ${(props) => props.theme.fonts.main};
   font-weight: 600;
-  font-size: ${`${baseFontSize}px`};
+  font-size: ${`${baseFontSize + 3}px`};
+
+  @media ${device.xl} {
+    font-size: ${`${baseFontSize}px`};
+  }
 `;
 
 export const ButtonText = styled(BaseText)`
@@ -19,7 +24,11 @@ export const ButtonText = styled(BaseText)`
 
 export const Title = styled(BaseText)`
   font-weight: 700;
-  font-size: ${`${titleFontSize}px`};
+  font-size: ${`${titleFontSize + 3}px`};
+
+  @media ${device.xl} {
+    font-size: ${`${titleFontSize}px`};
+  }
 `;
 
 export const SubTitle = styled(BaseText)`
@@ -63,5 +72,9 @@ export const Bold = styled(BaseText)`
 
 export const QuoteText = styled(BaseText)`
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
+
+  @media ${device.xl} {
+    font-size: ${"13px"};
+  }
 `;
