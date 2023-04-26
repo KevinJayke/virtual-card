@@ -41,11 +41,7 @@ const Header = ({ onToggleTheme }) => {
       <motion.div whileHover="hover" whileTap="tap">
         <ToggleBox onClick={onToggleTheme}>
           <motion.div variants={rotateMotion}>
-            <Icon
-              shape={type === "light" ? svgIcons.sun : svgIcons.moon}
-              width={"24px"}
-              height={"24px"}
-            />
+            <Icon shape={type === "light" ? svgIcons.sun : svgIcons.moon} />
           </motion.div>
         </ToggleBox>
       </motion.div>

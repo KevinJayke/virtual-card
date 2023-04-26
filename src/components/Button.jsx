@@ -14,7 +14,7 @@ const Button = () => {
         download
         target="_blank"
         rel="noopener noreferrer">
-        <Icon shape={svgIcons.downLoad} width={"24px"} height={"24px"} />
+        <Icon shape={svgIcons.downLoad} />
         <ButtonText>Download my CV</ButtonText>
       </ButtonBox>
     </motion.div>

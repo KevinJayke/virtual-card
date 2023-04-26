@@ -9,7 +9,7 @@ export const BaseText = styled.p`
   color: ${(props) => props.theme.colors.primary};
   font-family: ${(props) => props.theme.fonts.main};
   font-weight: 600;
-  font-size: ${`${baseFontSize + 3}px`};
+  font-size: ${`${baseFontSize + 4}px`};
 
   @media ${device.xl} {
     font-size: ${`${baseFontSize}px`};
@@ -24,7 +24,7 @@ export const ButtonText = styled(BaseText)`
 
 export const Title = styled(BaseText)`
   font-weight: 700;
-  font-size: ${`${titleFontSize + 3}px`};
+  font-size: ${`${titleFontSize + 4}px`};
 
   @media ${device.xl} {
     font-size: ${`${titleFontSize}px`};
@@ -41,7 +41,7 @@ export const SubTitle = styled(BaseText)`
   ::after {
     content: "";
     position: absolute;
-    width: 2px;
+    width: 2.5px;
     height: 100%;
     transform: rotate(90deg);
     background-color: ${(props) =>
@@ -72,7 +72,7 @@ export const Bold = styled(BaseText)`
 
 export const QuoteText = styled(BaseText)`
   font-weight: 400;
-  font-size: 14px;
+  font-size: 15.5px;
 
   @media ${device.xl} {
     font-size: ${"13px"};

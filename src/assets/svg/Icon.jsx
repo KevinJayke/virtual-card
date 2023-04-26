@@ -1,15 +1,16 @@
-import { Path } from "../../style/BoxStyle";
+import { IconSize, Path } from "../../style/BoxStyle";
 
-const Icon = ({ width, height, shape }) => {
+const Icon = ({ shape }) => {
   return (
-    <svg
-      width={width}
-      height={height}
-      fill="none"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg">
-      <Path d={shape} />
-    </svg>
+    <IconSize>
+      <svg
+        preserveAspectRatio="xMinYMin meet"
+        fill="none"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg">
+        <Path d={shape} />
+      </svg>
+    </IconSize>
   );
 };
 

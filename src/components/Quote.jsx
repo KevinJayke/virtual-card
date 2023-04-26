@@ -7,7 +7,8 @@ const Quote = () => {
       <QuoteText>
         “Passionate & creative, with a keen interest in the intersection of
         design and the web, I am constantly seeking to enhance my digital
-        skills, and enjoy exploring new ways to bring innovative ideas to life.”
+        skills, and always enjoy exploring new ways to bring innovative ideas to
+        life. Let's create something amazing together!”
       </QuoteText>
     </BoxQuote>
   );
