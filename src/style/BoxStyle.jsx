@@ -14,7 +14,7 @@ export const VStack = styled.div`
 
 export const Box = styled.div`
   width: 18.75rem;
-  border: 2px solid ${(props) => props.theme.colors.primary};
+  border: 2.4px solid ${(props) => props.theme.colors.primary};
   background: ${(props) => props.theme.colors.container};
   box-shadow: 0.4rem 0rem 0px 0px ${(props) => props.theme.colors.secondary},
     0.4rem 0.4rem 0px 0px ${(props) => props.theme.colors.secondary};
