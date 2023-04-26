@@ -13,13 +13,20 @@ const rotateMotion = {
   },
 };
 
-const Toogle = ({ onToggleTheme }) => {
+const Toogle = ({ onToggleTheme, shape, variant }) => {
   const { type } = useTheme();
+
+  const handleShape = (shapeIcon) => {
+    if (shapeIcon === "default")
+      return type === "light" ? svgIcons.sun : svgIcons.moon;
+    else if (shapeIcon === "heart") return svgIcons.email;
+  };
+
   return (
     <motion.div whileHover="hover" whileTap="tap">
-      <ToggleBox onClick={onToggleTheme}>
+      <ToggleBox variant={variant} onClick={onToggleTheme}>
         <motion.div variants={rotateMotion}>
-          <Icon shape={type === "light" ? svgIcons.sun : svgIcons.moon} />
+          <Icon shape={handleShape(shape)} />
         </motion.div>
       </ToggleBox>
     </motion.div>

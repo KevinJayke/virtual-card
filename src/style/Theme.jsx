@@ -25,3 +25,17 @@ export const darkTheme = {
     secondary: "MD IO",
   },
 };
+
+export const heartTheme = {
+  type: "heart",
+  colors: {
+    primary: "#e56b6f",
+    secondary: "#b56576",
+    background: "#355070",
+    container: "#f7ede2",
+  },
+  fonts: {
+    main: "Poppins",
+    secondary: "MD IO",
+  },
+};

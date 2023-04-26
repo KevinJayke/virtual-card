@@ -8,7 +8,8 @@ import { altData } from "../assets/data/data";
 const Header = ({ onToggleTheme }) => {
   return (
     <HStack as={"header"}>
-      <Toogle onToggleTheme={onToggleTheme} />
+      <Toogle shape={"default"} onToggleTheme={onToggleTheme} />
+      <Toogle variant={"heart"} shape={"heart"} onToggleTheme={onToggleTheme} />
       <Photo alt={altData.photo} src={myPicture} />
       <SideBar />
     </HStack>

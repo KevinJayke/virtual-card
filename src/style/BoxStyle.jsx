@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { device } from "./BreakPoints";
 
 export const HStack = styled.div`
@@ -124,6 +124,12 @@ export const ToggleBox = styled(Box)`
   width: 3rem;
   height: 3rem;
   box-shadow: none;
+
+  ${({ variant }) =>
+    variant === "heart" &&
+    css`
+      margin-top: 40px;
+    `};
 
   @media ${device.xl} {
     width: 2.5rem;
