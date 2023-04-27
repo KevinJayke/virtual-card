@@ -9,7 +9,6 @@ const Header = ({ onToggleTheme }) => {
   return (
     <HStack as={"header"}>
       <Toogle shape={"default"} onToggleTheme={onToggleTheme} />
-      <Toogle variant={"heart"} shape={"heart"} onToggleTheme={onToggleTheme} />
       <Photo alt={altData.photo} src={myPicture} />
       <SideBar />
     </HStack>
