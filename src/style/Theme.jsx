@@ -26,13 +26,14 @@ export const darkTheme = {
   },
 };
 
-export const heartTheme = {
-  type: "heart",
+export const konamiTheme = {
+  type: "konami",
   colors: {
-    primary: "#e56b6f",
-    secondary: "#b56576",
-    background: "#355070",
-    container: "#f7ede2",
+    primary: "black",
+    secondary: "#1b2a78",
+    background:
+      "linear-gradient(0deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%)",
+    container: "#879aff",
   },
   fonts: {
     main: "Poppins",

@@ -1,28 +1,25 @@
-import styled, { ThemeProvider } from "styled-components";
-import { darkTheme, lightTheme } from "./style/Theme";
+import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./style/Global";
 import Header from "./containers/Header";
 import Main from "./containers/Main";
-import { useState } from "react";
-import { useEffect } from "react";
 import { Container } from "./style/BoxStyle";
+import { useThemeManager } from "./tools/useThemeManager";
+import KeyPatternDetector from "./tools/KeyPatternDetector";
 
 function App() {
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
-
-  const themeToggler = () => {
-    theme === "dark" ? setTheme("light") : setTheme("dark");
-  };
-
-  useEffect(() => {
-    localStorage.setItem("theme", theme);
-  }, [theme]);
+  const { theme, toggleTheme, handleTheme, cheatTheme } = useThemeManager();
 
   return (
-    <ThemeProvider theme={theme === "dark" ? darkTheme : lightTheme}>
+    <ThemeProvider theme={handleTheme(theme)}>
+      <KeyPatternDetector
+        pattern={
+          "arrowuparrowuparrowdownarrowdownarrowleftarrowrightarrowleftarrowrightba"
+        }
+        onPatternMatch={cheatTheme}
+      />
       <GlobalStyles />
       <Container>
-        <Header onToggleTheme={themeToggler} />
+        <Header onToggleTheme={toggleTheme} />
         <Main />
       </Container>
     </ThemeProvider>
