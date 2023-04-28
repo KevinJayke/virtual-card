@@ -29,6 +29,7 @@ html,
 body {
 background: ${(props) => props.theme.colors.background};
 height: 100%;
+transition: all 0.5s linear;
 }
 
 /* Center the card inside the root of the project */

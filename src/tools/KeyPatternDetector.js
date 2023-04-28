@@ -12,11 +12,9 @@ const KeyPatternDetector = ({ pattern, onPatternMatch }) => {
 
       // Check if the pattern matches
       if (newPattern.endsWith(pattern)) {
-        onPatternMatch();
+        return onPatternMatch();
       }
     }
-
-    console.log(currentPattern);
 
     document.addEventListener("keydown", handleKeyDown);
 

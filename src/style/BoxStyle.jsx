@@ -16,7 +16,6 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  transition: all 0.5s linear;
   max-width: 20%;
   padding: 1.3rem;
 }
@@ -30,12 +29,14 @@ export const Box = styled.div`
   background: ${(props) => props.theme.colors.container};
   box-shadow: 0.4rem 0rem 0px 0px ${(props) => props.theme.colors.secondary},
     0.4rem 0.4rem 0px 0px ${(props) => props.theme.colors.secondary};
+  box-shadow: ${(props) => props.theme.boxShadow};
 
   @media ${device.xl} {
     width: 15.625rem;
     border: 2px solid ${(props) => props.theme.colors.primary};
     box-shadow: 0.25rem 0rem 0px 0px ${(props) => props.theme.colors.secondary},
       0.25rem 0.25rem 0px 0px ${(props) => props.theme.colors.secondary};
+    box-shadow: ${(props) => props.theme.boxShadow};
   }
 `;
 
@@ -96,10 +97,12 @@ export const IconBox = styled(Box)`
   margin-top: ${(props) => (props.marginTop ? "-2px" : "0px")};
   aspect-ratio: 1;
   box-shadow: 0.4rem 0rem 0px 0px ${(props) => props.theme.colors.secondary};
+  box-shadow: ${(props) => props.theme.boxShadow};
 
   @media ${device.xl} {
     width: 4rem;
     box-shadow: 0.25rem 0rem 0px 0px ${(props) => props.theme.colors.secondary};
+    box-shadow: ${(props) => props.theme.boxShadow};
   }
 
   &:active {

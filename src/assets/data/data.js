@@ -22,3 +22,8 @@ export const altData = {
   photo:
     "A man with a smile, a mustache and glasses, standing in front of the camera",
 };
+
+export const cheat = {
+  konamicode:
+    "arrowuparrowuparrowdownarrowdownarrowleftarrowrightarrowleftarrowrightba",
+};
