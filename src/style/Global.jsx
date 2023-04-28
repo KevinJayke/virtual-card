@@ -24,12 +24,21 @@ box-sizing: border-box;
     margin: 0;
     }
 
-/* Allow percentage-based heights in the application */
+/* Allow percentage-based heights in the application & add base theme color */
 html,
 body {
 background-color: ${(props) => props.theme.colors.background};
 height: 100%;
 }
+
+/* Center the card inside the root of the project */
+#root {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
 
 /* Improve typography */
 body {

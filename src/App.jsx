@@ -5,15 +5,7 @@ import Header from "./containers/Header";
 import Main from "./containers/Main";
 import { useState } from "react";
 import { useEffect } from "react";
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  transition: all 0.5s linear;
-`;
+import { Container } from "./style/BoxStyle";
 
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");

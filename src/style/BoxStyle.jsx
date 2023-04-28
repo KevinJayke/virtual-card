@@ -10,6 +10,18 @@ export const VStack = styled.div`
   ${(props) => (props.marginLeft ? "margin-left: -2px" : "margin-left: 0px")};
 `;
 
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  transition: all 0.5s linear;
+  max-width: 20%;
+  padding: 1.3rem;
+}
+`;
+
 // Common style
 
 export const Box = styled.div`
