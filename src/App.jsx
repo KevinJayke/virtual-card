@@ -12,7 +12,6 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: ${(props) => props.theme.colors.background};
   transition: all 0.5s linear;
 `;
 

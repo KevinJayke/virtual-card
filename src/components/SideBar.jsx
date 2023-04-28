@@ -4,7 +4,7 @@ import SocialIcon from "./SocialIcon";
 
 const SideBar = () => {
   return (
-    <VStack as={"section"}>
+    <VStack marginLeft as={"section"}>
       {socialIconsData.map((icon, index) => (
         <SocialIcon width="24px" height="24px" key={index} {...icon} />
       ))}

@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const Button = () => {
   return (
-    <motion.div whileHover={{ margin: "1rem" }} whileTap={{ scale: 0.9 }}>
+    <motion.div whileHover={{ marginTop: "1rem" }} whileTap={{ scale: 0.9 }}>
       <ButtonBox
         as={"a"}
         href={pdf}

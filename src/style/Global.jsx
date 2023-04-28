@@ -27,6 +27,7 @@ box-sizing: border-box;
 /* Allow percentage-based heights in the application */
 html,
 body {
+background-color: ${(props) => props.theme.colors.background};
 height: 100%;
 }
 

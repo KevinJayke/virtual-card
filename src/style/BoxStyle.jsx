@@ -7,7 +7,7 @@ export const HStack = styled.div`
 
 export const VStack = styled.div`
   flex-direction: column;
-  margin-left: -2px;
+  ${(props) => (props.marginLeft ? "margin-left: -2px" : "margin-left: 0px")};
 `;
 
 // Common style
