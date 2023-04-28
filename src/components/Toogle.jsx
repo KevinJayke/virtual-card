@@ -17,10 +17,14 @@ const Toogle = ({ onToggleTheme, shape, variant }) => {
   const { type } = useTheme();
 
   const handleShape = (shapeIcon) => {
-    if (shapeIcon === "default")
+    if (type === "konami") {
+      return svgIcons.fire;
+    } else if (shapeIcon === "default") {
       return type === "light" ? svgIcons.sun : svgIcons.moon;
-    else if (shapeIcon === "heart") return svgIcons.email;
+    }
   };
+
+  console.log(type);
 
   return (
     <motion.div whileHover="hover" whileTap="tap">
