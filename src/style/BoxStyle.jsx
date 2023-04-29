@@ -7,17 +7,22 @@ export const HStack = styled.div`
 
 export const VStack = styled.div`
   flex-direction: column;
-  ${(props) => (props.marginLeft ? "margin-left: -2px" : "margin-left: 0px")};
+  ${(props) => (props.marginLeft ? "margin-left: -2.4px" : "margin-left: 0px")};
+  @media ${device.xl} {
+    ${(props) => (props.marginLeft ? "margin-left: -2px" : "margin-left: 0px")};
+  }
 `;
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   min-height: 100vh;
-  max-width: 20%;
-  padding: 1.3rem;
+  padding: 1.3rem 0.4rem 1.3rem 0rem;
+
+  @media ${device.xl} {
+    padding: 1.3rem 0.25rem 1.3rem 0rem;
+  }
 }
 `;
 
