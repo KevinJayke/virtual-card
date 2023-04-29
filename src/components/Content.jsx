@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import { BoxContent, SpanBox } from "../style/BoxStyle";
 import { Bold, Italic, SubTitle, Title } from "../style/TextStyle";
 
