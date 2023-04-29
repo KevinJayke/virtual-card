@@ -140,12 +140,6 @@ export const ToggleBox = styled(Box)`
   height: 3rem;
   box-shadow: none;
 
-  ${({ variant }) =>
-    variant === "heart" &&
-    css`
-      margin-top: 40px;
-    `};
-
   @media ${device.xl} {
     width: 2.5rem;
     height: 2.5rem;

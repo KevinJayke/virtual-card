@@ -6,7 +6,7 @@ const SocialIcon = ({ url, ...props }) => {
   return (
     <motion.div
       whileHover={{
-        x: 10,
+        x: 9,
       }}
       whileTap={{ scale: 0.9, x: 0 }}>
       <IconBox

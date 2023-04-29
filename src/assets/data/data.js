@@ -1,5 +1,12 @@
 import svgIcons from "../svg/svgIcons";
 
+const up = "arrowup";
+const down = "arrowdown";
+const left = "arrowleft";
+const right = "arrowright";
+const A = "a";
+const B = "b";
+
 export const socialIconsData = [
   {
     href: "https://www.linkedin.com/in/k%C3%A9vin-jayat-952b56207/",
@@ -24,6 +31,5 @@ export const altData = {
 };
 
 export const cheat = {
-  konamicode:
-    "arrowuparrowuparrowdownarrowdownarrowleftarrowrightarrowleftarrowrightba",
+  konamicode: `${up}${up}${down}${down}${left}${right}${left}${right}${B}${A}`,
 };
