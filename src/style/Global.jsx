@@ -22,14 +22,18 @@ box-sizing: border-box;
 
 * {
     margin: 0;
-    }
+}
 
-/* Allow percentage-based heights in the application & add base theme color */
+/* Allow percentage-based heights in the application */
 html,
 body {
-background: ${(props) => props.theme.colors.background};
 height: 100%;
-transition: all 0.5s linear;
+}
+
+/* Add base theme color and theme transition */
+body{
+transition: background 0.5s linear;
+background: ${(props) => props.theme.colors.background};
 }
 
 /* Center the card inside the root of the project */

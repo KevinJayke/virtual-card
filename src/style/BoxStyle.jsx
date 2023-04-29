@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { device } from "./BreakPoints";
+import { motion } from "framer-motion";
 
 export const HStack = styled.div`
   display: flex;
@@ -69,6 +70,10 @@ export const BoxPhoto = styled(Box)`
   @media ${device.xl} {
     width: 11.75rem;
   }
+`;
+
+export const ImgMotion = styled(motion.img)`
+  opacity: 1;
 `;
 
 export const BoxQuote = styled(Box)`
@@ -144,6 +149,7 @@ export const ToggleBox = styled(Box)`
   width: 3rem;
   height: 3rem;
   box-shadow: none;
+  z-index: 1;
 
   @media ${device.xl} {
     width: 2.5rem;

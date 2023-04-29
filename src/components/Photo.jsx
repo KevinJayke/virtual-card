@@ -1,9 +1,14 @@
-import { BoxPhoto } from "../style/BoxStyle";
+import { BoxPhoto, ImgMotion } from "../style/BoxStyle";
 
 const Photo = ({ src, alt }) => {
   return (
     <BoxPhoto>
-      <img src={src} alt={alt} />
+      <ImgMotion
+        initial={{ opacity: 0, filter: "blur(0.5rem)" }}
+        animate={{ opacity: 1, filter: "blur(0)" }}
+        src={src}
+        alt={alt}
+      />
     </BoxPhoto>
   );
 };
