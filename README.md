@@ -1,3 +1,7 @@
+# Preview
+
+![A simple card on a blue backgroud](./src/assets/images/preview.jpg "website preview")
+
 # My Virtual Card
 
 My Virtual Card is a web application that allows users to create and share their virtual business cards.
