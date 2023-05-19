@@ -1,6 +1,8 @@
-# Preview
+## Preview
 
-![A simple card on a blue backgroud](./src/assets/images/preview.jpg "website preview")
+<p align="center">
+ <img src="./src/assets/images/preview.jpg" alt="A simple card on a blue backgroud"/>
+</p>
 
 # My Virtual Card
 
