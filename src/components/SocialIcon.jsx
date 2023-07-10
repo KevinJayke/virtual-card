@@ -2,7 +2,7 @@ import Icon from "../assets/svg/Icon";
 import { IconBox } from "../style/BoxStyle";
 import { motion } from "framer-motion";
 
-const SocialIcon = ({ url, ...props }) => {
+const SocialIcon = ({ ...props }) => {
   return (
     <motion.div
       whileHover={{
@@ -13,7 +13,7 @@ const SocialIcon = ({ url, ...props }) => {
         as={"a"}
         target="_blank"
         rel="noopener noreferrer"
-        href={url}
+        aria-label={props?.ariaLabel}
         {...props}>
         <Icon {...props} />
       </IconBox>
