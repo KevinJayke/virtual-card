@@ -5,10 +5,10 @@ const Quote = () => {
   return (
     <BoxQuote>
       <QuoteText>
-        “Passionate & creative, with a keen interest in the intersection of
-        design and the web, I am constantly seeking to enhance my digital
-        skills, and always enjoy exploring new ways to bring innovative ideas to
-        life. Let's create something amazing together!”
+        Passionné et créatif, avec un vif intérêt pour l'intersection du design
+        du web, je cherche en permanence à enrichir mes compétences numériques
+        et j’aime toujours explorer de nouvelles façons de donner vie à des
+        idées innovantes. Créons quelque chose d'incroyable ensemble !
       </QuoteText>
     </BoxQuote>
   );
