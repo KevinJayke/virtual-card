@@ -62,8 +62,8 @@ export const BoxContent = styled(Box)`
 
 export const BoxPhoto = styled(Box)`
   display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 14.1rem;
   border-radius: 10px 0px 0px 0px;
 
@@ -72,8 +72,19 @@ export const BoxPhoto = styled(Box)`
   }
 `;
 
+export const Circle = styled.span`
+  height: 10rem;
+  width: 10rem;
+  background-color: ${(props) => props.theme.colors.primary};
+  border-radius: 50%;
+  position: relative;
+`;
+
 export const ImgMotion = styled(motion.img)`
+  max-width: 10rem;
   opacity: 1;
+  position: absolute;
+  padding-bottom: 0.9375rem;
 `;
 
 export const BoxQuote = styled(Box)`

@@ -5,10 +5,11 @@ const Content = () => (
   <BoxContent>
     <Title as={"h1"}>I’m Kévin Jayat</Title>
     <SubTitle as={"h2"}>
-      <SpanBox>magician &</SpanBox>
+      <SpanBox>magicien &</SpanBox>
     </SubTitle>
     <Italic>
-      <Bold as={"em"}>front-end</Bold> developer
+      développeur
+      <Bold as={"em"}> front-end</Bold>
     </Italic>
   </BoxContent>
 );
