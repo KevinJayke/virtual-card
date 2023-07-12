@@ -9,7 +9,7 @@ const Content = () => (
     </SubTitle>
     <Italic>
       développeur
-      <Bold as={"em"}> front-end</Bold>
+      <Bold as={"em"}> front</Bold>
     </Italic>
   </BoxContent>
 );
