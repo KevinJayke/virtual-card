@@ -78,6 +78,11 @@ export const Circle = styled.span`
   background-color: ${(props) => props.theme.colors.primary};
   border-radius: 50%;
   position: relative;
+
+  @media ${device.xl} {
+    height: 8rem;
+    width: 8rem;
+  }
 `;
 
 export const ImgMotion = styled(motion.img)`
@@ -85,6 +90,10 @@ export const ImgMotion = styled(motion.img)`
   opacity: 1;
   position: absolute;
   padding-bottom: 0.9375rem;
+
+  @media ${device.xl} {
+    max-width: 8rem;
+  }
 `;
 
 export const BoxQuote = styled(Box)`
