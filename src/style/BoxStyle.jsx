@@ -89,7 +89,7 @@ export const ImgMotion = styled(motion.img)`
   max-width: 10rem;
   opacity: 1;
   position: absolute;
-  padding-bottom: 0.9375rem;
+  padding-bottom: 1rem;
 
   @media ${device.xl} {
     max-width: 8rem;
