@@ -5,7 +5,7 @@ const Content = () => (
   <BoxContent>
     <Title as={"h1"}>I’m Kévin Jayat</Title>
     <SubTitle as={"h2"}>
-      <SpanBox>magicien &</SpanBox>
+      <SpanBox>creative &</SpanBox>
     </SubTitle>
     <Italic>
       développeur
